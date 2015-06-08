@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Product App</title>
+</head>
+<body>
+
+    <div>
+        <h2>注音產生器</h2>
+        <input type="text" id="normal" size="5" />
+        <input type="text" id="joke" size="5" />
+        <input type="button" value="Search" onclick="find();" />
+        <p id="jokefun" />
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+    var uri = 'api/pinin';
+
+    $(document).ready(function () {
+      // Send an AJAX request
+      //$.getJSON(uri)
+      //    .done(function (data) {
+      //      // On success, 'data' contains a list of products.
+      //      $.each(data, function (key, item) {
+      //        // Add a list item for the product.
+      //        $('<li>', { text: formatItem(item) }).appendTo($('#products'));
+      //      });
+      //    });
+    });
+
+    function formatItem(item) {
+      return item.Name + ': $' + item.Price;
+    }
+        /*
+    function find() {
+        var normal = $('#normal').val();
+        var joke = $('#joke').val();
+        $.getJSON(uri + '?normal=' + normal + '&joke=' + joke)
+          .done(function (data) {
+            $('#product').text(data);
+          })
+          .fail(function (jqXHR, textStatus, err) {
+            $('#product').text('Error: ' + err);
+          });
+    }*/
+
+    function find() {
+        var normal = escape($('#normal').val());
+        var joke = escape($('#joke').val());
+        $.getJSON(uri + '?original=' + normal + '&joke=' + joke)
+          .done(function (data) {
+              $('#jokefun').text(data);
+          })
+          .fail(function (jqXHR, textStatus, err) {
+              $('#jokefun').text('Error: ' + err);
+          });
+    }
+
+    </script>
+</body>
+</html>
