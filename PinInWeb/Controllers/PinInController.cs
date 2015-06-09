@@ -21,6 +21,12 @@ namespace PinInWeb.Controllers
 
         public async Task<string> GetJokePinIn(string original, string joke)
         {
+            if (string.IsNullOrEmpty(original) || string.IsNullOrEmpty(joke))
+            {
+                return await GetRightPinIn("請完整輸入!");
+
+
+            }
             char[] originalString = original.ToArray();
             char[] jokeString = joke.ToArray();
             string jokeTranslate = "";

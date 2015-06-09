@@ -2,23 +2,74 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Product App</title>
+    <title>注陰產生器</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--open graph -->
+
+    <meta property="og:description" content="勇ㄎㄡˇ敢ㄕˋ表ㄒㄧㄣ達ㄈㄟ卻又不敢承認，愛在心裡口難開？讓注陰產生器來幫助您！^_____^" />
+    <!--<meta property="og:locale" content="zh_Hans_TW">-->
+    <!--<meta property="og:type" content="article">-->
+    <meta property="og:title" content="注陰產生器"/>
+    <meta property="og:url" content="http://cin.azurewebsites.net/"/>
+    <meta property="og:site_name" content="注陰產生器"/>
+
+    <meta property="og:image" content="http://cin.azurewebsites.net/image1.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+
 </head>
 <body>
 
     <div>
-        <h2>注音產生器</h2>
-        <input type="text" id="normal" size="5" />
-        <input type="text" id="joke" size="5" />
-        <input type="button" value="Search" onclick="find();" />
-        <p id="jokefun" />
-    </div>
+        <div class="page-header">
+            <h2>注陰產生器</h2>
+        </div>
+            <form>
+                <div class="form-group">
+                    <label for="normal" class="col-lg-2 control-label">輸入陽光文字</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="normal" placeholder="陽光面">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="joke" class="col-lg-2 control-label">輸入內心文字</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="joke" placeholder="陰暗面">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <input type="button" value="Generate" class="btn btn-primary" onclick="find();" />
+
+
+                    <div class="page-header">
+                        <p id="jokefun"></p>
+
+
+                    </div>
+                </div>
+                <!--<button id="copy-button" data-clipboard-text="Copy Me!" title="Click to copy me.">Copy to Clipboard</button>-->
+
+                <!--<button id="copy-button"  title="Click me to copy to clipboard." data-clipboard-target="jokefun" data-clipboard-text="Default clipboard text from attribute">Copy To Clipboard...</button>-->     
+                
+                
+                               <!--<a id="copy-button" href="#">Copy</a>-->
+</form>
+        </div>
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script>
     var uri = 'api/pinin';
 
     $(document).ready(function () {
+        //$("#copy-button").zclip({
+        //    path: "Scripts/ZeroClipboard.swf",
+        //    copy: $('p#jokefun').text()
+
+        //    //copy: function () { return $('p#jokefun').val(); }
+        //});
+        
+       
       // Send an AJAX request
       //$.getJSON(uri)
       //    .done(function (data) {
@@ -33,18 +84,7 @@
     function formatItem(item) {
       return item.Name + ': $' + item.Price;
     }
-        /*
-    function find() {
-        var normal = $('#normal').val();
-        var joke = $('#joke').val();
-        $.getJSON(uri + '?normal=' + normal + '&joke=' + joke)
-          .done(function (data) {
-            $('#product').text(data);
-          })
-          .fail(function (jqXHR, textStatus, err) {
-            $('#product').text('Error: ' + err);
-          });
-    }*/
+      
 
     function find() {
         var normal = escape($('#normal').val());
@@ -57,7 +97,28 @@
               $('#jokefun').text('Error: ' + err);
           });
     }
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63865004-1', 'auto');
+    ga('send', 'pageview');
+
+
+    
+
 
     </script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!--<script src="Scripts/ZeroClipboard.js"></script>
+    <script src="Scripts/main.js"></script>-->
+    <!--<script src="Scripts/boot.js"></script>-->
+    <!--<script src="Scripts/jquery.js"></script>-->
+    <!--<script src="Scripts/jquery.zclip.min.js"></script>-->
+   
 </body>
 </html>

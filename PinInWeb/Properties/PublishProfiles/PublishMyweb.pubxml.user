@@ -22,7 +22,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/06/2015 11:44:00</publishTime>
     </File>
     <File Include="bin/PinInWeb.dll">
-      <publishTime>06/08/2015 10:27:44</publishTime>
+      <publishTime>06/09/2015 09:43:12</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>06/06/2015 14:03:05</publishTime>
@@ -33,17 +33,89 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>06/06/2015 14:03:10</publishTime>
     </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/08/2015 11:47:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>06/08/2015 11:47:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/08/2015 11:47:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
     <File Include="Global.asax">
       <publishTime>06/06/2015 14:09:13</publishTime>
     </File>
+    <File Include="Icon.png">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="image1.png">
+      <publishTime>06/09/2015 09:38:36</publishTime>
+    </File>
     <File Include="index.html">
-      <publishTime>06/07/2015 09:30:27</publishTime>
+      <publishTime>06/09/2015 10:18:21</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/06/2015 22:32:21</publishTime>
+      <publishTime>06/08/2015 11:47:26</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>06/08/2015 11:47:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>06/08/2015 11:47:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>06/08/2015 11:47:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.zclip.js">
+      <publishTime>06/08/2015 14:23:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.zclip.min.js">
+      <publishTime>06/08/2015 14:24:07</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>06/08/2015 17:06:32</publishTime>
+    </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>06/08/2015 11:47:25</publishTime>
+    </File>
+    <File Include="Scripts/ZeroClipboard.js">
+      <publishTime>06/08/2015 17:28:03</publishTime>
+    </File>
+    <File Include="Scripts/ZeroClipboard.swf">
+      <publishTime>06/08/2015 15:18:32</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/08/2015 10:27:45</publishTime>
+      <publishTime>06/08/2015 13:56:39</publishTime>
     </File>
   </ItemGroup>
 </Project>
