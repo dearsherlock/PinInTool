@@ -4,11 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>注陰產生器</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/mycustomize.css" rel="stylesheet" type="text/css" />
+
     <!--open graph -->
 
     <meta property="og:description" content="勇ㄎㄡˇ敢ㄕˋ表ㄒㄧㄣ達ㄈㄟ卻又不敢承認，愛在心裡口難開？讓注陰產生器來幫助您！^_____^" />
-    <!--<meta property="og:locale" content="zh_Hans_TW">-->
-    <!--<meta property="og:type" content="article">-->
+  
     <meta property="og:title" content="注陰產生器"/>
     <meta property="og:url" content="http://cin.azurewebsites.net/"/>
     <meta property="og:site_name" content="注陰產生器"/>
@@ -19,7 +20,7 @@
 
 </head>
 <body>
-
+    
     <div>
         <div class="page-header">
             <h2>注陰產生器</h2>
@@ -36,24 +37,21 @@
                     <div class="col-lg-10">
                         <input type="text" class="form-control" id="joke" placeholder="陰暗面">
                     </div>
+                    <br></br>
                 </div>
+                
                 <div class="form-group">
-
-                    <input type="button" value="Generate" class="btn btn-primary" onclick="find();" />
+                    
+                    <input type="button" value="Generate" class="btn btn-primary btn-lg btn-block" onclick="find();" />
 
 
                     <div class="page-header">
-                        <p id="jokefun"></p>
+                        <H4 id="jokefun"></H4>
 
 
                     </div>
                 </div>
-                <!--<button id="copy-button" data-clipboard-text="Copy Me!" title="Click to copy me.">Copy to Clipboard</button>-->
-
-                <!--<button id="copy-button"  title="Click me to copy to clipboard." data-clipboard-target="jokefun" data-clipboard-text="Default clipboard text from attribute">Copy To Clipboard...</button>-->     
-                
-                
-                               <!--<a id="copy-button" href="#">Copy</a>-->
+         
 </form>
         </div>
 
@@ -62,23 +60,7 @@
     var uri = 'api/pinin';
 
     $(document).ready(function () {
-        //$("#copy-button").zclip({
-        //    path: "Scripts/ZeroClipboard.swf",
-        //    copy: $('p#jokefun').text()
-
-        //    //copy: function () { return $('p#jokefun').val(); }
-        //});
         
-       
-      // Send an AJAX request
-      //$.getJSON(uri)
-      //    .done(function (data) {
-      //      // On success, 'data' contains a list of products.
-      //      $.each(data, function (key, item) {
-      //        // Add a list item for the product.
-      //        $('<li>', { text: formatItem(item) }).appendTo($('#products'));
-      //      });
-      //    });
     });
 
     function formatItem(item) {
@@ -114,11 +96,6 @@
     </script>
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <!--<script src="Scripts/ZeroClipboard.js"></script>
-    <script src="Scripts/main.js"></script>-->
-    <!--<script src="Scripts/boot.js"></script>-->
-    <!--<script src="Scripts/jquery.js"></script>-->
-    <!--<script src="Scripts/jquery.zclip.min.js"></script>-->
-   
+    
 </body>
 </html>

@@ -14,7 +14,6 @@ namespace PinInWeb.Services
         public MongoConfig()
         {
             var client = new MongoClient("mongodb://127.0.0.1:27017");
-            //var server = client.GetServer();
             Database = client.GetDatabase("pinindb");
         }
     }
